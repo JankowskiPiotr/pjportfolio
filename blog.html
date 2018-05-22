@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Piotr Jankowski</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div id="main_nav_wrapper">
+      <nav id="main_nav">
+
+        <a id="main_logo" href="index.html">
+          <i class="fa fa-camera-retro fa-2x"></i>
+        </a>
+
+        <button id="mobile_main_menu_button" onclick="toggle('main_menu')">
+          <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <ul id="main_menu">
+          <li><a id="green" href ="index.html">Strona główna</a></li>
+          <li><a href ="blog.html">Kontakt</a></li>
+          <li><a href ="foto.html">Fotografia</a></li>
+          <li><a href ="">Pozycja 4</a></li>
+          <li>
+              <button onclick="toggle('dropdown_menu_1')">
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <ul id="dropdown_menu_1">
+                <li><a href ="">Rozwijane 1</a></li>
+                <li><a href ="">Rozwijane 2</a></li>
+                <li><a href ="">Rozwijane 3</a></li>
+                <li><a href ="">Rozwijane 4</a></li>
+              </ul>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <main id="main_container">
+      <header id = "main_header">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+        <a href="#" class="btn btn_ronded btn_border_white">Piotr Jankowski</a>
+      </header>
+
+      <section id="main_section">
+        <section id ="main_content">
+          <article>
+            <a href="">
+              <img src="http://lorempixel.com/1200/400/nature/1" alt="">
+                <h2>Lorem ipsum dolor sit amet</h2>
+              </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+          </article>
+
+          <article>
+            <a href="">
+              <img src="http://lorempixel.com/1200/400/nature/6" alt="">
+              <h2>Lorem ipsum dolor sit amet</h2>
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+          </article>
+      </section>
+
+     <aside id="main_sidebar">
+       <h2> Najpopularniejsze wpisy</h2>
+         <ul>
+             <li>
+               <a href="#">
+                 <img src="http://lorempixel.com/80/80/nature/1" alt="">
+                 <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+               </a>
+               <p>16 stycznia 2017</p>
+             </li>
+             <li>
+
+               <a href="#">
+                 <img src="http://lorempixel.com/80/80/nature/6" alt="">
+                 <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+               </a>
+               <p>16 stycznia 2017</p>
+             </li>
+         </ul>
+
+     </aside>
+   </section>
+
+ </main>
+<script type="text/javascript">
+  function toggle(elementId){
+    var element = document.getElementById(elementId);
+    if (getComputedStyle(element).display  === 'none'){
+      element.style.display ='block';
+    }else {
+      element.style.display ='none';
+    }
+  }
+
+
+</script>
+</body>
+</html>
